@@ -1,6 +1,7 @@
 
 html{
     font-family: "Oxygen", arial, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -35,77 +36,59 @@ html{
 
 
 .header{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-
-    width: 100vw;
-    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(16, 45, 105);
 }
 
 .div-logotipo-header{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    color: rgb(255, 102, 0); 
-    width: 100%;
+    padding: .5em 0;
 }
 
 .logotipo-header{
-    height: 8vh;
-    padding: 5px;
-    margin: 0;
+    width: 4em;
 }
 
 .div-logotipo-header span{
     font-style: italic;
-    font-weight: bolder;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    color: rgb(255, 102, 0);
     border-bottom: 4px double rgb(255, 102, 0);
     border-top: 4px double rgb(255, 102, 0);
     user-select:none
 }
 
 .nav-header{
-    background-color: rgb(15, 40, 92);
-    display: flex;
-    justify-content: center;
-
-    padding: 0;
-    margin: 0;
+    width: 100vw;
 }
 
 .nav-header ul{
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-    list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
 }
 
 .nav-header li{
     list-style: none;
+    text-align: center;
     transition: all .2s;
 }
 
 .nav-header li a{
-    display: block;
-
     color: white;
-    text-align: center;
     text-decoration: none;
-    padding: 1em;
-    font-size: 1.2em;
-    width: 100%;
+    font-size: 1em; 
+    padding: 1em; 
+    display: block;
+    text-transform: uppercase;
 }
+
 .nav-header li:hover{
-    background-color: rgb(16, 45, 105);
+    background-color: rgb(0, 24, 75);
+    color: rgb(255, 102, 0);
 }
 
 
@@ -116,11 +99,11 @@ html{
 
 
 .slide-externo{
-    width: 90vw;
+    width: 80vw;
     height: 40vh;
-    border: 10px solid white;
+    border: 5px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
-    margin: 260px auto 30px;
+    margin: 50px auto;
     overflow: hidden;
     box-sizing: border-box;
     border-radius: 10px;
@@ -133,8 +116,8 @@ html{
 
 .slide-interno img{
     display: block;
-    height: 40vh;
     width: 100%;
+    height: 40vh;
 }
 
 
@@ -145,7 +128,6 @@ html{
 
 .mid-content{
     background-color: rgb(244, 250, 252);
-    margin-top: 50px ;
     text-align: center;
     padding-bottom: 30px ;
 }
@@ -156,6 +138,7 @@ html{
     padding-top: 50px;
     margin: 0 50px 0 50px;
     text-transform: uppercase;
+    text-shadow: 1px 0px 1px black;
 }
 .mid-content-subtitle{
     font-size: 1em;
@@ -176,7 +159,7 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 1em 1.5em;
     text-decoration: none;
     color: rgb(0, 24, 75);
     transition: all .2s;
@@ -196,10 +179,6 @@ html{
     height: 4em;
 }
 
-
-
-
-
 .box-formulario-maps{
     background-color: rgb(244, 250, 252);
     text-align: center;
@@ -210,6 +189,7 @@ html{
     font-size: 2em;
     color: rgb(255, 102, 0);
     text-transform: uppercase;
+    text-shadow: 1px 0px 1px black;
 }
 
 .title-formulario p{
@@ -247,22 +227,22 @@ html{
 
 .btn-submit{
     margin-top: 10px;
-    border: none;
+    border: 2px solid transparent;
     border-radius: 10px;
     padding: 1em 2em;
     background-color: white;
-    transition: all .2s;
     box-sizing: border-box;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
+    transition: all .2s;
 }
 
 .btn-submit:hover{
-    border: 1px solid rgb(255, 102, 0);
+    border: 2px solid rgb(255, 102, 0);
 }
 
 
 .maps{
-   
+    
 }
 
 .maps h3{
@@ -273,6 +253,7 @@ html{
     width: 80vw;
     height: 50vh;
     border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.438);
 }
 
 
@@ -280,66 +261,80 @@ html{
 
 
 .blog{
-    text-align: center;
+    
 }
 
 .blog h1{
     text-align: center;
     color: rgb(255, 102, 0);
-    
+    text-shadow: 1px 0px 1px black;
+    margin-top: 1px;
 }
-
 
 .blog-content{
     display: grid;
     grid-template-columns: 1fr;
-    
 }
 
 .blog-item{  
-    display: flex;
-    flex-direction: column;
+    margin: 2em auto;
+    width: 90vw;
+}
+
+.blog-item a{
     text-decoration: none;
     color: rgb(0, 24, 75);
+}
+
+.blog-item a:hover{
     transition: all .2s;
-    margin-bottom: 25px ;
-}
-
-.blog-item img{
-    width: 80%;
-    height: 100%;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-.blog-item span{
-    font-size: 1em;
-    font-weight: bolder;
-    padding: 5px;
-}
-
-.blog-item:hover{
     color: rgb(255, 102, 0);
 }
 
-.blog-item p{
+.blog-item img{
+    width: 90vw;
+    height: 50vh;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
+    margin-bottom: 1em;
+}
+
+.blog-texto span{
+    font-size: 1em;
+    font-weight: bolder;
+    display: block;
+    padding-left: 1em;
+    letter-spacing: 1px;
+}
+
+
+.blog-texto p{
+    display: block;
     color: black;
-    margin: 0 70px 0 70px;
+    font-size: .9em;
+    padding: 0 .8em;
 }
 
 
 
 
 .todas-notícias{
+    text-align: center;
+}
+
+.todas-notícias a{
     text-decoration: none;
     color: rgb(255, 102, 0);
     font-size: 1.5em;
     border-bottom: solid 2px blue;
     transition: all .2s;
+    display: inline-block;
+    
 }
 
-.todas-notícias:hover{
+.todas-notícias a:hover{
     border-bottom: solid 2px rgb(255, 102, 0);
 }
 
@@ -424,4 +419,77 @@ html{
     padding: 10px;
 }
 
+
+
+
+
+
+@media screen and (min-width: 35em){ 
+
+    .blog-item{
+        width: 80vw;
+    }
+
+    .blog-item img{
+        width: 80vw;
+        height: 50vh;
+    }
+}
+
+
+@media screen and (min-width: 50em){
+    
+    .blog-item{
+        width: 80vw;
+    }
+
+    .blog-item img{
+        width: 80vw;
+        height: 60vh;
+    }
+}
+
+
+
+
+@media screen and (min-width: 62.5em){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .blog-item{  
+        margin: 2em ;
+        width: 25vw;
+    }
+    
+    .blog-item a{
+        text-decoration: none;
+        color: rgb(0, 24, 75);
+    }
+    
+    .blog-item img{
+        width: 28vw;
+        height: 30vh;
+    }
+}
+    
 
