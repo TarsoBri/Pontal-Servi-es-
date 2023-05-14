@@ -77,6 +77,7 @@ html{
     transition: all .2s;
 }
 
+
 .nav-header li a{
     color: white;
     text-decoration: none;
@@ -98,7 +99,7 @@ html{
 
 
 
-.slide-externo{
+.slide-outside{
     width: 80vw;
     height: 40vh;
     border: 5px solid white;
@@ -109,12 +110,12 @@ html{
     border-radius: 10px;
 }
 
-.slide-interno{
+.slide-inside{
     width: 100%;
     animation: slide 20s infinite cubic-bezier(.17,-0.38,.76,1.34);
 }
 
-.slide-interno img{
+.slide-inside img{
     display: block;
     width: 100%;
     height: 40vh;
@@ -174,31 +175,37 @@ html{
 }
 
 
-.icons{
+.icon svg{
     width: 5em;
     height: 4em;
 }
 
-.box-formulario-maps{
+
+
+
+
+
+
+.box-form-maps{
     background-color: rgb(244, 250, 252);
     text-align: center;
     padding: 3em 0 50px 0;
 }
 
-.title-formulario h3{
+.title-form h3{
     font-size: 2em;
     color: rgb(255, 102, 0);
     text-transform: uppercase;
     text-shadow: 1px 0px 1px black;
 }
 
-.title-formulario p{
+.title-form p{
     font-size: 1.5em;
     color: rgb(0, 24, 75);
     
 }
 
-.formulario{
+.form{
     background-color: rgb(227, 240, 243);
     width: 80vw;
     margin: auto;
@@ -207,13 +214,13 @@ html{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
 }
 
-.conteudo-formulario{
+.content-form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.item-formulario{
+.item-form{
     border: 2px transparent solid;
     margin: 10px;
     border-radius: 10px;
@@ -221,7 +228,7 @@ html{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
 }
 
-.item-formulario:hover{
+.item-form:hover{
     border: 2px solid rgb(255, 102, 0);
 }
 
@@ -241,17 +248,15 @@ html{
 }
 
 
-.maps{
-    
-}
+
 
 .maps h3{
     color: rgb(0, 24, 75);
     font-size: 2em;
 }
 .maps iframe{
-    width: 80vw;
-    height: 50vh;
+    width: 70vw;
+    height: 40vh;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.438);
 }
@@ -260,15 +265,13 @@ html{
 
 
 
-.blog{
-    
-}
+
 
 .blog h1{
     text-align: center;
     color: rgb(255, 102, 0);
     text-shadow: 1px 0px 1px black;
-    margin-top: 1px;
+    margin-top: 50px;
 }
 
 .blog-content{
@@ -295,13 +298,13 @@ html{
     width: 90vw;
     height: 50vh;
     display: block;
-    margin: auto;
+
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
     margin-bottom: 1em;
 }
 
-.blog-texto span{
+.blog-text span{
     font-size: 1em;
     font-weight: bolder;
     display: block;
@@ -310,7 +313,7 @@ html{
 }
 
 
-.blog-texto p{
+.blog-text p{
     display: block;
     color: black;
     font-size: .9em;
@@ -320,11 +323,11 @@ html{
 
 
 
-.todas-notícias{
+.all-news{
     text-align: center;
 }
 
-.todas-notícias a{
+.all-news a{
     text-decoration: none;
     color: rgb(255, 102, 0);
     font-size: 1.5em;
@@ -334,7 +337,7 @@ html{
     
 }
 
-.todas-notícias a:hover{
+.all-news a:hover{
     border-bottom: solid 2px rgb(255, 102, 0);
 }
 
@@ -362,7 +365,7 @@ html{
 }
 
 .footer address p{
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 
@@ -374,7 +377,7 @@ html{
     justify-content: center;
 }
 
-.div-logotipo-footer span{
+.span-icon-footer{
     font-style: italic;
     display: flex;
     text-transform: uppercase;
@@ -390,25 +393,26 @@ html{
     margin: 10px 5px 20px 0 ;
 }
 
-.redes{
+
+.social-media{
     text-align: center;
     padding: 0 ;
 }
 
-.redes li{
+.social-media li{
     font-size: 2.5em;
     padding: .3em;
     list-style: none;
     display: inline-block;
 }
 
-.redes a{
+.social-media a{
     color: white;
     text-decoration: none;
     transition: all .2s;
 }
 
-.redes a:hover{
+.social-media a:hover{
     color: rgb(0, 162, 255);
 }
 
@@ -459,37 +463,45 @@ html{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     .blog-content{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     
     .blog-item{  
-        margin: 2em ;
-        width: 25vw;
+        width: 30vw;
     }
     
-    .blog-item a{
-        text-decoration: none;
-        color: rgb(0, 24, 75);
-    }
     
     .blog-item img{
-        width: 28vw;
+        width: 30vw;
         height: 30vh;
     }
+
+    .grid-footer{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 15em);
+    }
+    
+    .grid-content-footer{
+        
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
 }
     
 
+@media screen and (min-width: 80em){
+
+    .blog-item{  
+        width: 31vw;
+    }
+    
+    .blog-item img{
+        width: 31vw;
+        height: 45vh;
+    }
+}
