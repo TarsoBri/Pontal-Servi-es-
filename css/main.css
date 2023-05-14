@@ -459,9 +459,21 @@ html{
 @media screen and (min-width: 62.5em){
 
 
-
-
-
+    .mid-col{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    
+    .item{
+        background-color: rgb(227, 240, 243);
+        margin: 8px 20px 8px 20px;
+        padding: 1em 1.5em;
+    }
+    
+    .low-2{
+        display: flex;
+    }
 
     .blog-content{
         display: grid;
@@ -495,6 +507,26 @@ html{
     
 
 @media screen and (min-width: 80em){
+
+    .form{
+        width: 45vw;
+    }
+
+    .maps{
+        border-left: solid 2px  rgb(177, 191, 194);
+    }
+
+    .maps iframe{
+        width: 45vw;
+        height: 50vh;
+    }
+
+    .box-form-maps{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+
 
     .blog-item{  
         width: 31vw;
