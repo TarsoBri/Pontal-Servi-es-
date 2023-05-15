@@ -85,6 +85,7 @@ html{
     padding: 1em; 
     display: block;
     text-transform: uppercase;
+    font-weight: bolder;
 }
 
 .nav-header li:hover{
@@ -455,11 +456,37 @@ html{
 
 
 @media screen and (min-width: 62.5em){
-
-    .slide-outside{
-        width: 70vw;
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
     }
 
+    .div-logotipo-header{
+        padding: .5em 2em;
+    }
+
+
+
+    .nav-header ul{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .nav-header li a{
+        font-size: 1em;
+        padding: 2em 1em;
+    }
+    
+    
+
+
+
+    
+    .slide-outside{
+        width: 70vw;
+}
+    
 
 
     .mid-col{
@@ -512,6 +539,36 @@ html{
     
 
 @media screen and (min-width: 80em){
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .div-logotipo-header{
+        padding: 1em 2em;
+    }
+
+
+    .nav-header ul{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .nav-header li a{
+        font-size: 1em;
+        padding: 2.5em;
+    }
+    
+    
+    
+
+
+
+
+
+
 
     .slide-outside{
         width: 60vw;
