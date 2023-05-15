@@ -23,12 +23,11 @@ html{
     }  
 }
 
-.fumaça{
+.smoke{
     background-image: radial-gradient(closest-corner at 50% 30%, rgb(151, 151, 151), transparent);   
     background-size: cover;
     background-position: center -40px;
     background-repeat: no-repeat;
-
     padding-bottom: 80px;
     width: 100%;
 }
@@ -82,7 +81,7 @@ html{
     color: white;
     text-decoration: none;
     font-size: 1em; 
-    padding: 1em; 
+    padding: 1.5em; 
     display: block;
     text-transform: uppercase;
     font-weight: bolder;
@@ -149,6 +148,7 @@ html{
 
 
 .mid-col{
+    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -156,9 +156,8 @@ html{
 .item{
     display: flex;
     flex-direction: column;
-
     background-color: rgb(227, 240, 243);
-    margin: 8px 20px 8px 20px;
+    margin: 15px ;
     padding: 1em 1.5em;
     text-decoration: none;
     color: rgb(0, 24, 75);
@@ -481,31 +480,21 @@ html{
     
 
 
-
     
     .slide-outside{
-        width: 70vw;
+        width: 80vw;
 }
     
 
 
+
+
     .mid-col{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 130px 130px;
-        background-color: aqua;
+        grid-template-columns: repeat(4, 1fr);
     }
+
+
     
-    .item{
-        background-color: rgb(227, 240, 243);
-        margin: 8px 20px 8px 20px;
-        padding: 1em 1.5em;
-    }
-    
-    .low-2{
-        display: block;
-        
-    }
 
     .blog-content{
         display: grid;
@@ -603,10 +592,6 @@ html{
     }
 
 
-    .mid-col{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
     
 
 
