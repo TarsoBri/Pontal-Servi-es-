@@ -150,16 +150,14 @@ html{
 .mid-col{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
 }
 
 .item{
+    display: flex;
+    flex-direction: column;
+
     background-color: rgb(227, 240, 243);
     margin: 8px 20px 8px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     padding: 1em 1.5em;
     text-decoration: none;
     color: rgb(0, 24, 75);
@@ -458,11 +456,17 @@ html{
 
 @media screen and (min-width: 62.5em){
 
+    .slide-outside{
+        width: 70vw;
+    }
+
+
 
     .mid-col{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        grid-template-rows: 130px 130px;
+        background-color: aqua;
     }
     
     .item{
@@ -472,7 +476,8 @@ html{
     }
     
     .low-2{
-        display: flex;
+        display: block;
+        
     }
 
     .blog-content{
@@ -507,6 +512,22 @@ html{
     
 
 @media screen and (min-width: 80em){
+
+    .slide-outside{
+        width: 60vw;
+    }
+
+
+
+
+
+    .mid-col{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+
+
 
     .form{
         width: 45vw;
