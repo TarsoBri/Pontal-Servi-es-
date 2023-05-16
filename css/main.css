@@ -139,7 +139,6 @@ html{
     padding-top: 50px;
     margin: 0 50px 0 50px;
     text-transform: uppercase;
-    text-shadow: 1px 0px 1px black;
 }
 .mid-content-subtitle{
     font-size: 1em;
@@ -194,7 +193,6 @@ html{
     font-size: 2em;
     color: rgb(255, 102, 0);
     text-transform: uppercase;
-    text-shadow: 1px 0px 1px black;
 }
 
 .title-form p{
@@ -265,10 +263,10 @@ html{
 
 
 
-.blog h1{
+.blog h3{
     text-align: center;
     color: rgb(255, 102, 0);
-    text-shadow: 1px 0px 1px black;
+    font-size: 2em;
     margin-top: 50px;
 }
 
