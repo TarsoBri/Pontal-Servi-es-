@@ -5,6 +5,17 @@ html{
 }
 
 
+#carouselExampleControls{
+    width: 100vw;
+    height: 70vh;
+    margin: 0;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 60vh;
+} 
+
 @keyframes slide{
     0%, 22%, 100%{
         transform: translateY(0);
@@ -245,7 +256,9 @@ html{
 
 
 
-
+.maps{
+    margin-top: 2em;
+}
 .maps h3{
     color: rgb(0, 24, 75);
     font-size: 2em;
@@ -478,12 +491,6 @@ html{
     
 
 
-    
-    .slide-outside{
-        width: 80vw;
-}
-    
-
 
 
 
@@ -569,25 +576,6 @@ html{
     
     
 
-
-
-
-
-
-
-    .slide-outside{
-        width: 80vw;
-        height: 70vh;
-    }
-
-    .slide-inside{
-        width: 100%;
-        animation: slide-80em 20s infinite cubic-bezier(.17,-0.38,.76,1.34);
-    }
-
-    .slide-inside img{
-        height: 70vh;
-    }
 
 
     
